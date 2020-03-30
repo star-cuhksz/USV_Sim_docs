@@ -8,7 +8,7 @@ import sphinx
 # -- Project information -----------------------------------------------------
 
 project = 'USV Test Platform'
-author = 'USV-CUHKSZ'
+author = 'YiKang Gu'
 copyright = '%d USV-CUHKSZ' % datetime.now().year
 version = '1.0'
 release = ''
@@ -33,7 +33,7 @@ html_theme_options = {
     "github_user": "star-cuhksz",
     "github_repo": "STar",
     "fixed_sidebar": True,
-    "tidelift_url": "https://tidelift.com/subscription/pkg/pypi-alabaster?utm_source=pypi-alabaster&utm_medium=referral&utm_campaign=docs",  # noqa
+    "tidelift_url": "https://tidelift.com/subscription/pkg/pypi-alabaster?utm_source=pypi-alabaster&utm_medium=referral&utm_campaign=docs",
 }
 html_static_path = ['_static']
 html_sidebars = {
