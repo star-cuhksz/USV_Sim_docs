@@ -36,7 +36,7 @@ Install Python and the dependencies of USV Test Platform.
 .. code-block:: bash
 
     sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential python-rosdep python-wxtools python-lxml python-pathlib python-h5py python-scipy python-geolinks python-gdal
-    sudo apt-get install libfftw3-* libxml++2.6-* libsdl-image1.2-dev libsdl-dev
+    sudo apt-get install libfftw3-dev libxml++2.6-dev libsdl-image1.2-dev libsdl-dev
 
 Configure and Build
 -------------------
@@ -60,6 +60,8 @@ Clone the usv_sim repository in the src folder of your catkin workspace:
     git clone https://github.com/star-cuhksz/STAr.git
 
 Run the instalation script:
+
+.. code-block:: bash
 
     cd ~/catkin_ws/src/usv_sim_cuhksz
     ./install_usv_sim

@@ -2,72 +2,49 @@
 Configuration
 =============
 
-The usv_sim_cuhksz package has 8 subpackages.
+This usv_sim_cuhksz package has 6 subpackages.
 
-|   usv_sim_cuhksz
-|   ├── `usv_sim`_
-|   ├── `usv_base_ctrl`_
-|   ├── `usv_env_disturb`_
-|   ├── `usv_dynamics`_
-|   ├── `uwsim`_
-|   ├── `freefloating_gazebo`_
-|   ├── `usv_sim_rviz`_ (will be removed in future)
-|   └── `usv_navigation`_ (will be removed in future)
+- usv_sim:
+    Contains setup configuration files, launch files and model files.
 
-usv_sim
-=======
+    - config : robot joint PID control parameters.
+    - launch/models : robots launch file.
+    - launch/scenarios_launchs : scenarios launch file.
+    - launch/world : terrain launch file.
+    - meshes : robot 3D model file.
+    - scenes : uwsim scenario description file.
+    - terrain : terrain 3D model file.
+    - urdf : urdf format robot description file.
+    - world : gazebo world description file.
+    - xacro : xacro format robot description file.
 
-mainly contains configuration files and 3D model files.
+- usv_base_ctrl
+    Robot control
 
-::
+- usv_env_disturb
+    It can display the data from the third-party plug-in on the rviz and act on the robot when the environment type is local.
 
-    usv_sim
-    ├── config
-    │   └── sailboat.yaml                 this is the sailboat underlying PID controller configuration file
-    ├── launch
-    │   ├── models                        contains robot launch files
-    │   ├── scenarios_launchs             contains scenario launch files
-    │   └── world                         contains terrain launch files
-    ├── meshes                            contains robot 3D model files
-    ├── scenes
-    │   ├── sailboat_scenario_cuhksz.xml  the scenario configuration file
-    │   ├── sailboat_scenario1.xml
-    │   └── UWSimScene.dtd
-    ├── terrain                           contains terrain 3D model files
-    ├── urdf
-    ├── world
-    ├── xacro                             the robot description files
-    │   ├── boat_subdivided4.xacro
-    │   ├── buoy.xacro
-    │   ├── sailboat_cuhksz.xacro
-    │   └── sailboat.xacro
-    └── ...
+    - wind_current
+    - water_current
 
-usv_base_ctrl
-=============
+- freefloating_gazebo [Changes are not recommended]
+    A Gazebo plugin to simulate and control underwater vehicles.
+    The package builds two Gazebo plugins:
 
-contains some controller scripts
+    - freefloating_gazebo_fluid (world plugin)
+        simulates buoyancy and viscous force from water.
+    - freefloating_gazebo_control (model plugin)
+        opens topics for thrusters and joints, in order to control the considered robots.
 
-usv_env_disturb
-===============
+- usv_dynamics [Changes are not recommended]
+    - foil_dynamics_plugin : a gazebo plugin for CFD model.
 
-contains configuration files for wind plugin and water plugin.
+- uwsim [Changes are not recommended]
+    UWSim is a tool for testing and integrating perception and control algorithms before running them on the real robots.
 
-usv_dynamics
-============
-
-contains the
-
-uwsim
-=====
-
-freefloating_gazebo
-===================
-
-usv_sim_rviz
-============
-
-the rviz configuration file
-
-usv_navigation
-==============
+    - underwater_simulation
+    - uwsim_bullet
+    - uwsim_osgbullet
+    - uwsim_osgocean
+    - uwsim_osgworks
+    - visualization_osg

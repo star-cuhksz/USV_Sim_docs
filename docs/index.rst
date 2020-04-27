@@ -18,5 +18,5 @@ All those features allow to realistically modeling the movement of boats.
    modules/Operation/GettingStarted
    modules/Operation/Installation
    modules/Customization/Configuration
-   modules/Error
+   modules/Issues
    modules/LeaderBoard
