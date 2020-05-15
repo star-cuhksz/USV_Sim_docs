@@ -37,8 +37,6 @@ Creating a catkin workspace:
 
     source /opt/ros/kinetic/setup.bash
     mkdir -p ~/catkin_ws/src
-    cd ~/catkin_ws/
-    catkin_make
 
 .. tip:: The ``catkin_ws`` just a folder name, can replace it for clearly and concisely.
 
@@ -49,7 +47,7 @@ Clone the usv_sim repository in the src folder of your catkin workspace:
     cd ~/catkin_ws/src
     git clone https://github.com/yikangGu/usv_sim_cuhksz.git
 
-Clone submodules of the repository/
+Clone submodules of the repository.
 
 .. code-block:: bash
 
