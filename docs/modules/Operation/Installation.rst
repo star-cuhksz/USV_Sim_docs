@@ -4,17 +4,7 @@ Installation
 
 USV Test Platform is tested and supported on the following 64-bit systems:
 
-* Ubuntu 16.04 or later
-
-Install from package
-====================
-
-`Docker`_ uses containers to create virtual environments
-that isolate a USV Test Platform installation from the rest of the system.
-
-The USV Test Platform `Docker images`_ are already configured to run.
-
-    the docker images will publishing soon.
+* Ubuntu 16.04
 
 Build from source
 =================
@@ -57,16 +47,19 @@ Clone the usv_sim repository in the src folder of your catkin workspace:
 .. code-block:: bash
 
     cd ~/catkin_ws/src
-    git clone https://github.com/star-cuhksz/STAr.git
+    git clone https://github.com/yikangGu/usv_sim_cuhksz.git
 
-Run the instalation script:
+Clone submodules of the repository/
 
 .. code-block:: bash
 
-    cd ~/catkin_ws/src/usv_sim_cuhksz
-    ./install_usv_sim
+    git submodule init
+    git submodule update
 
-Compile the stack:
+Click this `link`_ and download some robot model files for usv_sim_cuhksz.
+Please mail to yikang.gu@qq.com for getting password.
+
+After that, compile the stack:
 
 .. code-block:: bash
 
@@ -75,6 +68,17 @@ Compile the stack:
 
 If you are never having problems, that means your environment properly setup.
 
+Install from package
+====================
+
+`Docker`_ uses containers to create virtual environments
+that isolate a USV Test Platform installation from the rest of the system.
+
+The USV Test Platform `Docker images`_ are already configured to run.
+
+    the docker images will publishing soon.
+
 .. _`Docker`: https://docs.docker.com/install
 .. _`Docker images`: https://docs.docker.com/install
 .. _`ROS installation instructions`: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+.. _`link`: https://pan.baidu.com/s/1KbNvG0fFAhX9V5q269Co-A
