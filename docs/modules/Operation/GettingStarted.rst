@@ -37,6 +37,26 @@ Run a scenario:
 
 .. tip:: The `issues instructions`_ may help you if launch failed.
 
+Control your robot
+------------------
+
+We can run the python script to control our robot quickly in the usv_base_ctrl ros package.
+Go to the usv_base_ctrl/scripts folder, then run this command:
+
+.. code-block:: bash
+    
+    python headingControl_for_scene1.py
+
+Of cause, we can modify this script to control robot better now.
+The sailboat_controller.py is a controller contains some usv_sim API for uses quickly.
+
+If you want to control robot manually, you can run the keyboard_teleop script.
+
+.. code-block:: bash
+
+    python keyboard_teleop.py
+
+The next section will show you more about the usv_sim_cuhksz.
 
 Configure your project
 ----------------------

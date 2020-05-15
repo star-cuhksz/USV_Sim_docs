@@ -30,8 +30,8 @@ pygments_style = 'sphinx'
 html_theme = 'alabaster'
 html_theme_options = {
     "description": "A light, configurable USV Test Platform",
-    "github_user": "star-cuhksz",
-    "github_repo": "STar",
+    "github_user": "yikangGu",
+    "github_repo": "usv_sim_cuhksz",
     "fixed_sidebar": True,
     "tidelift_url": "https://tidelift.com/subscription/pkg/pypi-alabaster?utm_source=pypi-alabaster&utm_medium=referral&utm_campaign=docs",
 }

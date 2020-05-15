@@ -48,3 +48,21 @@ This usv_sim_cuhksz package has 6 subpackages.
     - uwsim_osgocean
     - uwsim_osgworks
     - visualization_osg
+
+.. Usv_base_ctrl
+.. =============
+
+
+.. Import a robot
+.. ==============
+
+.. This simulation uses 2 tools, Gazebo and UWSim.
+.. The uwsim need to use the obj format 3D model by analysis the uwsim source code.
+
+.. The 
+
+.. 你需要准备一下几个文件
+
+.. 1 机器人模型文件
+
+.. usv_sim 

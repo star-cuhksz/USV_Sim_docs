@@ -8,9 +8,6 @@ It contains multiple robot models such as propelled boats(rudder boat, different
 Boats are affected by waves, wind and water currents, implemented by UWsim for water surface modeling, HEC-RAS for water speed of river and channel simulations, and Lattice Boltzmann in a 2D grid for wind current.
 All those features allow to realistically modeling the movement of boats.
 
-
-.. _`usv_sim_lsa`: https://github.com/disaster-robotics-proalertas/usv_sim_lsa
-
 .. toctree::
    :hidden:
    :glob:
@@ -20,3 +17,5 @@ All those features allow to realistically modeling the movement of boats.
    modules/Customization/Configuration
    modules/Issues
    modules/LeaderBoard
+
+.. _`usv_sim_lsa`: https://github.com/disaster-robotics-proalertas/usv_sim_lsa
