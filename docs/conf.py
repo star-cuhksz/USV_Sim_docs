@@ -8,8 +8,8 @@ import sphinx
 # -- Project information -----------------------------------------------------
 
 project = 'USV Test Platform'
-author = 'YiKang Gu'
-copyright = '%d USV-CUHKSZ' % datetime.now().year
+author = 'star-cuhksz'
+copyright = '%d star-cuhksz' % datetime.now().year
 version = '1.0'
 release = ''
 
@@ -30,7 +30,7 @@ pygments_style = 'sphinx'
 html_theme = 'alabaster'
 html_theme_options = {
     "description": "A light, configurable USV Test Platform",
-    "github_user": "yikangGu",
+    "github_user": "star-cuhksz",
     "github_repo": "usv_sim_cuhksz",
     "fixed_sidebar": True,
     "tidelift_url": "https://tidelift.com/subscription/pkg/pypi-alabaster?utm_source=pypi-alabaster&utm_medium=referral&utm_campaign=docs",
@@ -69,7 +69,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'USV.tex', 'USV Documentation',
-     'USV-CUHKSZ', 'manual'),
+     'star-cuhksz', 'manual'),
 ]
 
 

@@ -45,7 +45,7 @@ Clone the usv_sim repository in the src folder of your catkin workspace:
 .. code-block:: bash
 
     cd ~/catkin_ws/src
-    git clone https://github.com/yikangGu/usv_sim_cuhksz.git
+    git clone https://github.com/star-cuhksz/usv_sim_cuhksz.git
 
 Clone submodules of the repository.
 
