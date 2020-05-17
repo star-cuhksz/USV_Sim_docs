@@ -53,13 +53,13 @@ How to import a robot
 =====================
 
 1. Prepare 2 formats of file, obj and dae.
-2. Put them in usv_sim/meshes folder.
-3. Create a xacro file to descript robot.
-4. Create a xml file to descript a scenario for uwsim.
+2. Put them in the usv_sim/meshes folder.
+3. Create a xacro file to descript robot in the usv_sim/xacro folder.
+4. Create a xml file to descript a scenario for uwsim in the usv_sim/scene folder.
 
 .. tip:: The uwsim just parse a urdf file name that "your-xacro-filename_uwsim".urdf.
     This file will created when run the "... parse:= true" command in terminal.
-    So the xml file should import the urdf file replace the xacro file.
+    So the xml file should import the urdf file to replace the xacro file.
 
 5. Create a launch file to import the robot when the uwsim and gazebo start.
 
@@ -88,6 +88,9 @@ This a template for the xml file.
 
         <vehicle>
             [Necessary]: to configure a robot at least one.
+            <file>
+                a "your-xacro-filename"_uwsim.urdf file path.
+            </file>
         </vehicle>
 
         <object>
