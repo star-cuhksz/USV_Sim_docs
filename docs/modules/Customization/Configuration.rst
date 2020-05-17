@@ -49,20 +49,68 @@ This usv_sim_cuhksz package has 6 subpackages.
     - uwsim_osgworks
     - visualization_osg
 
-.. Usv_base_ctrl
-.. =============
+How to import a robot
+=====================
+
+1. Prepare 2 formats of file, obj and dae.
+2. Put them in usv_sim/meshes folder.
+3. Create a xacro file to descript robot.
+4. Create a xml file to descript a scenario for uwsim.
+
+.. tip:: The uwsim just parse a urdf file name that "your-xacro-filename_uwsim".urdf.
+    This file will created when run the "... parse:= true" command in terminal.
+    So the xml file should import the urdf file replace the xacro file.
+
+5. Create a launch file to import the robot when the uwsim and gazebo start.
+
+Modify the xml file
+===================
+
+This a template for the xml file.
+
+.. code-block:: xml
+
+    <?xml version="1.0"?>
+    <!DOCTYPE UWSimScene SYSTEM "UWSimScene.dtd">
+    <UWSimScene>
+        <oceanState>
+            [Necessary]: to configure the uwsim scene setting,
+            like the wind current and the water current.
+        </oceanState>
+
+        <simParams>
+            [Necessary]: unknown
+        </simParams>
+
+        <camera>
+            [Optional]: to configure the camera.
+        </camera>
+
+        <vehicle>
+            [Necessary]: to configure a robot at least one.
+        </vehicle>
+
+        <object>
+            [Necessary]: to configure the terrain.
+        </object>
+
+        <rosInterfaces>
+            <ROSOdomToPAT>
+                [Optional]: if a robot needs move.
+            </ROSOdomToPAT>
+
+            <OceanSurfaceToROSOceanVehicle>
+                [Optional]: if a robot needs motion on the ocean face.
+            </OceanSurfaceToROSOceanVehicle>
+
+            <ROSJointStateToArm>
+                [Optional]: if a robot needs are control.
+            </ROSJointStateToArm>
+        </rosInterfaces>
+    </UWSimScene>
 
 
-.. Import a robot
-.. ==============
+Other
+=====
 
-.. This simulation uses 2 tools, Gazebo and UWSim.
-.. The uwsim need to use the obj format 3D model by analysis the uwsim source code.
-
-.. The 
-
-.. 你需要准备一下几个文件
-
-.. 1 机器人模型文件
-
-.. usv_sim 
+If have any problem that cannot be solved, welcome to contact yikang.gu@qq.com.

@@ -21,7 +21,7 @@ and setting up the ROS environment on your computer.
 If you are ever having problems finding or using your ROS packages make sure
 that you have your environment properly setup.
 
-Install Python and the dependencies of USV Test Platform.
+Install python packages and the dependencies of USV Test Platform.
 
 .. code-block:: bash
 
